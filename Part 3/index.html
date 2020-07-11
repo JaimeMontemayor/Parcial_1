@@ -27,6 +27,13 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 */
 
 // CREA TU FUNCION challenge1 aqui:
+function challenge1(){
+    var iPreguntas = prompt("¿Cuantas preguntas quieres?");
+    for(var i = 0; i < iPreguntas; i++){
+    alert(nombres[i]);
+    }
+
+}
 
 
 
@@ -35,7 +42,11 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 */
 
 // CREA TU FUNCION challenge2 2 aquí.
-
+function challenge2(){
+    for(var i = 0; i < nombres.length(); i++){
+        console.log(nombres[i].toUpperCase());
+    }
+}
 
 
 /*
@@ -46,11 +57,15 @@ A) Define un objeto tipo "Dog" que reciba 3 parametros
 2) Color
 3) Raza
 
+var Dog = {name:"Doggo", color:"black", race:"pitbull"};
 
 B) Crea 3 objectos siguiendo esa clase con diferentes valores
 
 eJ   var fido = new Dog("Fido","Cafe","Poodle")
 
+var perry = new Dog("perry","Blanco","Beagle")
+var doggo = new Dog("doggo","Negro","Chihuahua")
+var rex = new Dog("rex","Cafe","pitbull")
 
 *****BONUS**** 10  puntos
 
